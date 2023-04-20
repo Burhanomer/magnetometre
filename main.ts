@@ -1,3 +1,12 @@
+radio.onReceivedNumber(function (receivedNumber) {
+    alarm = receivedNumber
+    if (true) {
+        basic.showIcon(IconNames.Asleep)
+    } else if (false) {
+        basic.showIcon(IconNames.Angry)
+    }
+})
+let alarm = 0
 radio.setGroup(1)
 music.setVolume(50)
 basic.forever(function () {
